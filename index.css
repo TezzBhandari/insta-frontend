@@ -1,0 +1,229 @@
+:root {
+  --var-primary-color: #fff;
+  --var-secondary-color: #f1f4f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  position: fixed;
+  width: 70px;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #d2d2d2;
+  height: 100vh;
+  padding: 2rem 1rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.menu-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.menu-icon > svg {
+  width: 30px;
+  height: 30px;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+
+.main {
+  margin-left: 70px;
+  display: flex;
+  height: 100vh;
+}
+
+.left-container {
+  width: 400px;
+  overflow-y: auto;
+  margin-top: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 70px;
+  width: 400px;
+  padding: 0.5rem 1rem;
+}
+
+.user-title {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.user-title > p {
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: rgb(0, 0, 0);
+}
+
+.drop > svg {
+  width: 15px;
+  height: 15px;
+}
+
+.scrollbar-section {
+  overflow-y: auto;
+}
+
+.note-section {
+  display: flex;
+  height: 140px;
+  overflow: hidden;
+  overflow-x: auto;
+  scrollbar-width: none;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.note-container {
+  position: relative;
+}
+
+.note-container img {
+  border-radius: 50%;
+}
+
+.note-container .img {
+  border: 1px solid gray;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note {
+  position: absolute;
+  left: 50%;
+  bottom: 90%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 0.4rem 0.6rem;
+}
+
+.messages {
+}
+
+.messages .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem;
+}
+
+.messages .title button {
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  outline: none;
+}
+
+.conversation-section {
+}
+
+.conversation-container {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.conversation-container:hover {
+  background-color: #d3d3d3;
+}
+
+.conv-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px;
+}
+
+.desc {
+  display: flex;
+  gap: 0.2rem;
+  color: rgb(115, 115, 115);
+  font-size: 0.8rem;
+}
+
+.conv-title {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.blue-icon {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(0, 147, 246);
+}
+
+.chat-profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.chat-profile-img img {
+  border-radius: 50%;
+}
+
+.right-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.chat-icon > svg {
+  width: 100px;
+  height: 100px;
+}
+
+.chat-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.send-msg-btn {
+  background-color: rgb(0, 149, 246);
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 8px;
+}
